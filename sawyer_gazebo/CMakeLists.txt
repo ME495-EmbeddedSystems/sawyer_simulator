@@ -92,8 +92,6 @@ install(
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 )
 
-install(
-  DIRECTORY scripts
+catkin_install_python(PROGRAMS scripts/cameras_sim_io_node.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-  USE_SOURCE_PERMISSIONS
 )
